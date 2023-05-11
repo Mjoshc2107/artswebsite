@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/image.css">
+        <!-- css & js cdn  -->
+           <!-- Latest compiled and minified CSS -->
+           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+           <!-- Latest compiled JavaScript -->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <a href="../Arts.html#15" class="return-btn">
+            <img src="../sources/img/close.png" alt="return button">
+        </a>
+        <div class="product">
+            <div class="product-small-img">
+
+                <img src="../sources/Arts/drilon1.jpg" onclick="myFunction(this)">
+                <img src="../sources/Arts/drilon2.jpg" onclick="myFunction(this)">
+                <img src="../sources/Arts/drilon3.jpg" onclick="myFunction(this)">
+                <img src="../sources/Arts/drilon4.jpg" onclick="myFunction(this)">
+
+            </div>
+            <div class="img-container">
+                <img id="imageBox" src="../sources/Arts/drilon1.jpg">
+            </div>
+        </div>
+
+        <div class="description">
+            <h2>Title: Miyamoto's mind <br>
+                By: Justine Emmanuel A. Drilon</h2>
+            <p></font>  
+                <font size="2">  
+                Description: An abstract representation of Miyamoto's mind during his prime years. Miyamoto Musashi is one of the legendary figures in Japanese History and is said to be the strongest swordsman of his time. He was also a philosopher and wrote many books including his most famous work, "The book of five rings". During his prime, he realized the importance of growth and how it connects to strength and spirit. The rose symbolizes growth. How one's spirit can blossom into a magnificent wonder. In this art piece of mine, I decided to take inspiration from postmodernist artists like Jackson Pollock and Picasso while incorporating styles of my own. I wanted it to be abstract but not totally to the point that it is hard to recognize or unrecognizable at all. In the lower left side of the center of the piece, I decided to put Musashi's face there mainly to achieve that abstract effect. I wanted the piece to look like something a citizen in feudal japan would see in one of his dreams. The blank background represents most of the Japanese paintings of the time having blank, undetailed backgrounds while the colors of the rose are inspired by the works of Picasso and Pollock. Truly, I wanted this piece to be like a combination of the eastern and western abstract art. Musashi's stoic face and the blossoming roses and the floating petals are nothing but the illustration of our inability to fully comprehend what is happening in the mind, of how it all comes up, but we do know that these imaginations of ours, these abstract thoughts can be focused and through focus, we can realize these dreams and thoughts. I would like to think that this piece illustrates the abstract thought of Musashi on growth during one of his many, many meditations</p>
+        </div>
+
+        <script>
+            function myFunction(smallImg)
+            {
+                var fullImg = document.getElementById("imageBox")
+                fullImg.src = smallImg.src;
+            }
+        </script>
+
+    </body>
+    </html>

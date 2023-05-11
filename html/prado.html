@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/image.css">
+        <!-- css & js cdn  -->
+           <!-- Latest compiled and minified CSS -->
+           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+           <!-- Latest compiled JavaScript -->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <a href="../Arts.html#17" class="return-btn">
+            <img src="../sources/img/close.png" alt="return button">
+        </a>
+        <div class="product">
+            <div class="product-small-img">
+
+                <img src="../sources/Arts/Prado1.jpg" onclick="myFunction(this)">
+                <img src="../sources/Arts/prado2.jpg" onclick="myFunction(this)">
+                <img src="../sources/Arts/prado3.jpg" onclick="myFunction(this)">
+                <img src="../sources/Arts/prado4.jpg" onclick="myFunction(this)">
+
+            </div>
+            <div class="img-container">
+                <img id="imageBox" src="../sources/Arts/Prado1.jpg">
+            </div>
+        </div>
+
+        <div class="description">
+            <h2>Title: "Cherishing the Priceless Gift of Freedom" <br> By: John Patrick Prado</h2>
+
+            <p>Freedom should be used for good. Let us remember the heroes who sacrificed their lives for the freedom we enjoy today. Many have died or offered their lives so that the next generation can experience being free. We should also use it correctly and appropriately so that all these sacrifices will not be in vain.
+                
+            </p>
+        </div>
+
+        <script>
+            function myFunction(smallImg)
+            {
+                var fullImg = document.getElementById("imageBox")
+                fullImg.src = smallImg.src;
+            }
+        </script>
+
+    </body>
+    </html>

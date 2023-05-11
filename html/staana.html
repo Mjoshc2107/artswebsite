@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/image.css">
+         <!-- css & js cdn  -->
+           <!-- Latest compiled and minified CSS -->
+           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+           <!-- Latest compiled JavaScript -->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <a href="../Arts.html#7" class="return-btn">
+            <img src="../sources/img/close.png" alt="return button">
+        </a>
+        <div class="product">
+            <div class="product-small-img">
+    
+                <img src="../sources/Arts/amiel4.jpg" onclick="myFunction(this)">
+                <img src="../sources/Arts/amiel2.jpg" onclick="myFunction(this)">
+                <img src="../sources/Arts/amiel3.jpg" onclick="myFunction(this)">
+                <img src="../sources/Arts/amiel1.jpg" onclick="myFunction(this)">
+
+
+            </div>
+            <div class="img-container">
+                <img id="imageBox" src="../sources/Arts/amiel4.jpg">
+            </div>
+        </div>
+        <div class="description">
+            <h2>Title:A Dream to chase <br>
+            By: StaAna, Amiel Julius J.</h2>
+            <p> Description 
+                This Artwork is about to a boy that has a dream to be a very good basketball player. I draw this because I have this same dream before but all of it stops because of the injury I got from the game. This boy works hard to be a good basketball player someday. So he plays very competitively and serious everytime he had a chance.</p>
+        </div>
+
+        <script>
+            function myFunction(smallImg)
+            {
+                var fullImg = document.getElementById("imageBox")
+                fullImg.src = smallImg.src;
+            }
+        </script>
+
+    </body>
+    </html>
